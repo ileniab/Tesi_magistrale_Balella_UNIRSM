@@ -1,0 +1,71 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive CharRNN Text Generation Example using p5.js</title>
+<!--
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="p5.speech.js" type="text/javascript"></script>
+-->
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+<script src="p5.speech.js"></script> 
+
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;500&display=swap" rel="stylesheet">
+    
+  <style>
+      body{
+          font-family: 'Karla';
+      }
+    p {
+      width: 50%;
+      background-color: white;
+      font-family: 'Karla';
+      
+    }
+
+    h1 {
+      font-family: 'Bree Serif';
+    }
+       h2 {
+      font-family: 'Karla';
+    font-weight: 500;
+    }
+       #original  {
+      font-family: 'Karla';
+    font-weight: 500;
+    }
+      
+    
+    </style>
+</head>
+
+<script src="sketch.js"></script>
+
+<body>
+    <h1>Interactive CharRNN Prototipo della sezione listen</h1>
+    <h2>Il modello è stato allenato su report di natura ambientalistica raccolti da: <a href="https://www.ipcc.ch/reports/">IPCC</a> e <a href="https://www.greenpeace.org/usa/reports/">Greenpeace</a>
+<br> Seleziona la lunghezza, la temperatura, il sentimento e l'argomento e Genera il racconto. </h2>
+  
+<!--    <textarea id="textInput" style="width: 300px; height: 50px;" placeholder="type here"></textarea>-->
+    
+  <br /> Lunghezza racconto:
+  <input id="lenSlider" type="range" min="300" max="500" value="300"                             /> <span id="length">300</span>
+  <br /> Temperatura racconto:
+  <input id="tempSlider" type="range" min="0" max="1" step="0.01"                             /><span id="temperature">0.5</span>
+  <p id="status">Loading Model <br></p>
+  <p id="result">
+    <span style="font-family: Bree Serif" id="original"></span><span id="prediction"></span>
+  </p>
+</body>
+
+</html>
