@@ -7,4 +7,8 @@
 * Image Classifier (https://editor.p5js.org/ileniab/sketches/qRaLvgylm)
 
 
+![prototipo 1](/img/prototipo_charrnn.jpg)
+![prototipo 2](/img/prototipo_p5.jpg)
+
+
 
