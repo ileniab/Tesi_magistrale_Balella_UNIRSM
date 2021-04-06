@@ -2,9 +2,12 @@
 
 ### All'interno di questa repository si possono trovare i prototipi realizzati al fine di verificare due modelli:
 
-* CharRNN (https://www.youtube.com/watch?v=DeCf6DgroOQ&feature=youtu.be)
+* CharRNN 
 
 * Image Classifier (https://editor.p5js.org/ileniab/sketches/qRaLvgylm)
+
+* Video prototipi (https://www.youtube.com/watch?v=DeCf6DgroOQ&feature=youtu.be)
+* Video progetto (https://youtu.be/cnDB8R0Nf9Q)
 
 
 ![prototipo 1](/img/prototipo_charrnn.jpg)
